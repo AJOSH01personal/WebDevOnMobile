@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	
+<style>
+	
+	.freePhoneBtn {
+		border: none;
+		background-color: rgb(200,23,12);
+		color: white;
+		font-weight: bold;
+		font-size: 45px;
+		border-radius: 100px;
+		cursor: pointer;
+		}
+		
+	 .reverseBtnPy {
+		background-color: rgb(225, 54, 98);
+		color: white;
+		font-weight: bold;
+		font-size: 35px;
+		border-radius: 80px;
+		cursor: pointer;
+		}
+		
+	.reverseBtnJs {
+		background-color: rgb(125, 123, 44);
+		color: white;
+		font-weight: bold;
+		font-size: 35px;
+		border-radius: 80px;
+		cursor: pointer;
+		}
+	
+	.colorBtn {
+		cursor:pointer;
+		}
+		
+</style>
+
+<!-- Include PyScript -->
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.5.1/core.css" />
+ <script type="module" src="https://pyscript.net/releases/2025.5.1/core.js"></script>
+
+<h1> A webpage created from an android device </h1>
+
+<button class="freePhoneBtn"> Press here to win a free Iphone 14! </button>
+
+<p> *** Begin Python Code *** </p>
+
+<!-- Python Code -->
+<p> Code 1: </p>
+    
+    <script type="py">
+    	from pyscript import display
+    	display("hello from pyscript")
+    </script>
+    
+<p> Code 2: </p>
+<input type="text" name="text_data" id="text_data" placeholder="Type any text here..." />
+  <button class="reverseBtnPy" py-click="reverse_string" > <img src="web-img/reverse.png" alt="Button Image" style="width: 20px; height: auto;"> Reverse! </button>
+  <div id="output"></div>
+        <script type="py" src="./test.py"></script>
+        
+<p> --- End Python Code ---</p>
+
+<p> *** Begin Js Code ***</p>
+
+<p> Code Scripts </p>
+
+<script type="text/javascript" src="./script.js" ></script>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = showMsg()"> 
+Click me for Hello World.</button>
+
+<p id="demo"></p>
+
+<input type="text" name="text_data" id="text_data" placeholder="Type any text here..." />
+  <button class="reverseBtnJs" 
+   onclick="document.getElementById('#text_data').innerHTML = RevStr3()"> <img src="web-img/reverse.png" alt="Button Image" style="width: 20px; height: auto;"> Reverse! </button>
+  <div id="output"></div>
+        <script type="text/javascript" src="./script.js"></script>
+
+<button class="colorBtn"> Color! </button>
